@@ -44,9 +44,44 @@ conda activate deepL
 pip install -r requirements.txt
 ```
 
+
+### make sure artifacts folder created
+
+```bash
+python main.py
+```
+
 ### After Training the model - to visualize Training report through Tensorboard
 ```bash
 tensorboard --logdir artifacts/prepare_callbacks/tensorboard_log_dir/
 ```
 
+### STEP 03- setup remote server using dagshub and mlflow tracking
+## MLflow
+
+[Documentation](https://mlflow.org/docs/latest/getting-started/index.html)
+
+
+##### cmd
+- mlflow ui
+
+### dagshub
+[dagshub](https://dagshub.com/)
+
+MLFLOW_TRACKING_URI=https://dagshub.com/MannShrestha/Chicken-Disease-Classification-MLflow-DVC.mlflow
+MLFLOW_TRACKING_USERNAME=MannShrestha
+MLFLOW_TRACKING_PASSWORD=41f801ddadfd672ed6133c408cdff17b1a85368b
+python script.py
+
+Run this to export as env variables:
+
+```bash
+
+export MLFLOW_TRACKING_URI=https://dagshub.com/MannShrestha/Chicken-Disease-Classification-MLflow-DVC.mlflow
+
+export MLFLOW_TRACKING_USERNAME=MannShrestha 
+
+export MLFLOW_TRACKING_PASSWORD=41f801ddadfd672ed6133c408cdff17b1a85368b
+
+```
 
