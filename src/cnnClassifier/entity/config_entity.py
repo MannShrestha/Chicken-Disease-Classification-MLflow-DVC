@@ -24,3 +24,11 @@ class PrepareBaseModelConfig:
     params_classes: int
 
 
+# Prepare callbacks Entity
+@dataclass(frozen=True)
+class PrepareCallbacksConfig:
+    root_dir: Path
+    tensorboard_root_log_dir: Path
+    checkpoint_model_filepath: Path
+
+
