@@ -85,6 +85,8 @@ export MLFLOW_TRACKING_PASSWORD=41f801ddadfd672ed6133c408cdff17b1a85368b
 
 ```
 
+
+### STEP 04- Pipeline tracking using DVC
 ### DVC command:
 ```bash
 dvc init
@@ -102,5 +104,19 @@ dvc dag
 dvc dag --outs
 ```
 
+### STEP 05- Building flask app
+```bash
+python app.py
+```
+
+Now,
+
+open up you local host and port
+
+
+#### visualize Training report through Tensorboard with changed in paramaters
+```bash
+tensorboard --logdir artifacts/prepare_callbacks/tensorboard_log_dir/
+```
 
 
