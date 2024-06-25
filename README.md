@@ -85,3 +85,22 @@ export MLFLOW_TRACKING_PASSWORD=41f801ddadfd672ed6133c408cdff17b1a85368b
 
 ```
 
+### DVC command:
+```bash
+dvc init
+```
+
+```bash
+dvc repro
+```
+
+```bash
+dvc dag
+```
+
+```bash
+dvc dag --outs
+```
+
+
+
